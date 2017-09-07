@@ -4,9 +4,9 @@ import wrap from 'lodash.wrap'
 
 let _applyed = false
 
-export default class Wawati {
+export default class VarelaRound {
 
-  static fontFamily = 'Wawati SC'
+  static fontFamily = 'VarelaRound-Regular'
 
   /**
    * apply font family to <Wawati SC>
@@ -17,7 +17,7 @@ export default class Wawati {
       let originText = func.apply(this, args)
       return React.cloneElement(originText, {
         style: [
-          {fontFamily: Wawati.fontFamily},
+          {fontFamily: VarelaRound.fontFamily},
           originText.props.style,
         ]
       })
@@ -25,3 +25,4 @@ export default class Wawati {
     _applyed = true
   }
 }
+
